@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyManagement", "MoneyManagement\MoneyManagement.csproj", "{34455DBD-036D-45FA-8470-0D1AFEEED13B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{73BB7586-A1E7-40CE-B497-D7EF25B35C9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34455DBD-036D-45FA-8470-0D1AFEEED13B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34455DBD-036D-45FA-8470-0D1AFEEED13B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34455DBD-036D-45FA-8470-0D1AFEEED13B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34455DBD-036D-45FA-8470-0D1AFEEED13B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73BB7586-A1E7-40CE-B497-D7EF25B35C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73BB7586-A1E7-40CE-B497-D7EF25B35C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73BB7586-A1E7-40CE-B497-D7EF25B35C9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73BB7586-A1E7-40CE-B497-D7EF25B35C9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {125EF56C-5ADD-4244-856F-1406B2ABE0F5}
+	EndGlobalSection
+EndGlobal
