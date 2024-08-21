@@ -13,7 +13,7 @@
             <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
 
-        <fa:ImageAwesome Icon="{Binding Path=Icon,ElementName=item}" Width="20" Height="20" VerticalAlignment="Top" Foreground="#f1f1f1" Margin="0 3 0 0"/>
+        <fa:ImageAwesome Icon="{Binding Path=Icon,ElementName=item}" Width="20" Height="20" VerticalAlignment="Center" Foreground="#f1f1f1" Margin="0 3 0 0"/>
 
         <StackPanel Grid.Column="1" Margin="10 0">
             <TextBlock FontSize="16" Foreground="{Binding Path=Color,ElementName=item}" Text="{Binding Path=Title,ElementName=item}"/>
