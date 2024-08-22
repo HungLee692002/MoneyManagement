@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.EntityFrameworkCore;
 using System.IO;
-using Microsoft.EntityFrameworkCore;
 
 namespace MoneyManagement.Models;
 

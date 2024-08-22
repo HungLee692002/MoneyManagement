@@ -1,5 +1,4 @@
 ﻿using FontAwesome.WPF;
-using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -33,6 +32,6 @@ namespace MoneyManagement.UserControls
         public static readonly DependencyProperty IconProperty = DependencyProperty.Register("Icon", typeof(FontAwesomeIcon), typeof(MenuButton));
     }
 
-    
+
 
 }

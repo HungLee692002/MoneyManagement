@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace MoneyManagement.Models;
+﻿namespace MoneyManagement.Models;
 
 public partial class TransitionHistory
 {

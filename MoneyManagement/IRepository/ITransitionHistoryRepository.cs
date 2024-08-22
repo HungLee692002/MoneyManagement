@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MoneyManagement.IRepository
+﻿namespace MoneyManagement.IRepository
 {
-    public interface ITransitionHistory
+    public interface ITransitionHistoryRepository
     {
-        Task<ITransitionHistory> GetDataByDay(DateTime date);
+        Task<ITransitionHistoryRepository> GetDataByDay(DateTime date);
     }
 }

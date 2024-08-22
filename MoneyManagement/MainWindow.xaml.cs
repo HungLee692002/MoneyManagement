@@ -1,16 +1,9 @@
 ﻿using MoneyManagement.Models;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using static MaterialDesignThemes.Wpf.Theme;
 
 namespace MoneyManagement
 {
@@ -60,9 +53,9 @@ namespace MoneyManagement
             {
                 TransitionHistory data = new TransitionHistory
                 {
-                    Title = "Money Spend "+i,
-                    Description ="Money Spend Description "+i,
-                    Money = i*1000000,
+                    Title = "Money Spend " + i,
+                    Description = "Money Spend Description " + i,
+                    Money = i * 1000000,
                     IsAdd = 1,
                     Time = "2024-08-22",
                 };
