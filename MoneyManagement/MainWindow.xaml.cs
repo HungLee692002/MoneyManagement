@@ -1,4 +1,4 @@
-﻿using Syncfusion.Windows.Shared;
+﻿using MoneyManagement.Models;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -19,6 +19,8 @@ namespace MoneyManagement
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly MoneymanagementContext DbContext = new MoneymanagementContext();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -29,9 +31,8 @@ namespace MoneyManagement
         /// </summary>
         #region event handler
 
-
         //Window loaded
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
             lblMsgSum.Text = "Tổng thu chi trong Tháng " + DateTime.Now.Month + " : ";
             lblSum.Text = "1.000.000 VND";
@@ -54,6 +55,22 @@ namespace MoneyManagement
             };
 
             ApplyCustomStyle(calendar, specificDates);
+
+            for (int i = 0; i < 5; i++)
+            {
+                TransitionHistory data = new TransitionHistory
+                {
+                    Title = "Money Spend "+i,
+                    Description ="Money Spend Description "+i,
+                    Money = i*1000000,
+                    IsAdd = 1,
+                    Time = "2024-08-22",
+                };
+
+                await DbContext.TransitionHistories.AddAsync(data);
+            }
+
+            await DbContext.SaveChangesAsync();
         }
 
         //Border move drag
