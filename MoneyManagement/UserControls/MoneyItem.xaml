@@ -7,21 +7,28 @@
              xmlns:fa="http://schemas.fontawesome.io/icons/"
              mc:Ignorable="d" Name="moneyItem">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="auto"/>
-        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid VerticalAlignment="Top" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
 
-        <fa:ImageAwesome Icon="{Binding Path=Icon,ElementName=moneyItem}" Width="20" Height="20" VerticalAlignment="Center" Foreground="#f1f1f1" />
+            <fa:ImageAwesome Icon="{Binding Path=Icon,ElementName=moneyItem}" Width="20" Height="20" VerticalAlignment="Center" Foreground="#f1f1f1" />
 
-        <StackPanel Grid.Column="1" Margin="10 0">
-            <TextBlock FontSize="16" Foreground="{Binding Path=Color,ElementName=moneyItem}" Text="{Binding Path=Title,ElementName=moneyItem}" TextWrapping="Wrap"/>
-            <TextBlock FontSize="12" Foreground="{Binding Path=MoneyColor,ElementName=moneyItem}" Text="{Binding Path=Money,ElementName=moneyItem,StringFormat=C}" FontWeight="SemiBold"/>
-        </StackPanel>
+            <StackPanel Grid.Column="1" Margin="10 0">
+                <TextBlock FontSize="16" Foreground="{Binding Path=Color,ElementName=moneyItem}" Text="{Binding Path=Title,ElementName=moneyItem}" TextWrapping="Wrap"/>
+                <TextBlock FontSize="12" Foreground="{Binding Path=MoneyColor,ElementName=moneyItem}" Text="{Binding Path=Money,ElementName=moneyItem,StringFormat=C}" FontWeight="SemiBold"/>
+            </StackPanel>
 
-        <Button Style="{StaticResource buttonBig}" Grid.Column="2" Margin="0">
-            <fa:ImageAwesome Style="{StaticResource angleBig}" Icon="Pencil" Width="20" Height="20" VerticalAlignment="Center" Foreground="#f1f1f1"/>
-        </Button>
+            <Button Style="{StaticResource buttonBig}" Grid.Column="2" Margin="0">
+                <fa:ImageAwesome Style="{StaticResource angleBig}" Icon="Pencil" Width="20" Height="20" VerticalAlignment="Center" Foreground="#f1f1f1"/>
+            </Button>
+        </Grid>
+        <Separator Grid.Row="1" Margin="10 10 10 0" VerticalAlignment="Bottom"></Separator>
     </Grid>
 </UserControl>
